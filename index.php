@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="assets/css/live-resume.css">
     <link rel="stylesheet" href="assets/css/cover.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
     <!-- <link rel="stylesheet" href="assets/css/scroll.css"> -->
     <style>
 
@@ -45,10 +50,10 @@
 </head>
 
 <body>
-<div id="example"></div>
-
+<!-- <div id="example" style="z-index: 0;"></div> -->
+<!-- <div id="example"></div> -->
             <header>
-                <button class="btn btn-white ml-auto mr-3 ml-md-0 mr-md-auto nav-link" style="border-radius:5px;">
+                <button class=" ml-auto mr-3 ml-md-0 mr-md-auto nav-link" style="border-radius:5px;border:none;">
                     Today: <?=date("F, D Y")?>
                 </button>
                 <nav class="collapsible-nav" id="collapsible-nav">
@@ -61,10 +66,10 @@
                 <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
                     data-target="collapsible-nav"><img src="assets/images/hamburger.svg" alt="hamburger"></button>
             </header>
-            <div class="content-wrapper">
+            <div class="content-wrapper wow">
                 <aside >
-                    <div class="profile-img-wrapper" style="">
-                        <img src="assets/images/profile.jpg" alt="profile">
+                    <div class="profile-img-wrapper">
+                        <img src="assets/images/profile.jpg" alt="profile" style="border:solid 5px #ddd">
                     </div>
                     <h1 class="profile-name">Dr. Egho Promise</h1>
                     <div class="text-center">
@@ -82,15 +87,14 @@
                     <div class="widget">
                         <h5 class="widget-title">personal information</h5><hr>
                         <div class="widget-content">
-                            <p>BIRTHDAY : 15 April 1990</p>
-                            <p>WEBSITE : www.example.com</p>
-                            <p>PHONE : +1 123 000 4444</p>
-                            <p>MAIL : your@example.com</p>
-                            <p>Location : California, USA</p><br>
-                            <a href="assets/documents/Ehigiator_Egho_Promise_CV.docx"><button class="btn btn-download-cv btn-primary rounded-pill"> <img src="assets/images/download.svg" alt="download"
-                                class="btn-img">DOWNLOAD CV </button></a><p></p>
-                                <a href="assets/documents/Ehigiator_Egho_Promise_CV.docx"><button class="btn btn-download-cv btn-primary rounded-pill"> Google Scholar Id</button></a><p></p>
-                                <a href="assets/documents/Ehigiator_Egho_Promise_CV.docx"><button class="btn btn-download-cv btn-primary rounded-pill"> ResearchGate Id</button></a><p></p>
+                            <!-- <p>BIRTHDAY : 15 April 1990</p> -->
+                            <!-- <p>WEBSITE : www.example.com</p> -->
+                            <p>PHONE : +44 7466 076674</p>
+                            <p>eghopromise@yahoo.com</p>
+                            <p>Location : Birmingham, UK</p><hr>
+                            <a href="assets/documents/Ehigiator_Egho_Promise_CV.docx"><button class="btn btn-download-cv btn-primary rounded-pill"><i class='bx bxs-download bx-burst btn-img' style='color:#fff;font-size:14px;'></i>DOWNLOAD CV </button></a><p></p>
+                                <a href="https://scholar.google.com/citations?user=X-jERmIAAAAJ&hl=en"><button class="btn btn-download-cv btn-primary rounded-pill"> Google Scholar Id</button></a><p></p>
+                                <a href="https://www.researchgate.net/profile/Ehigiator-Egho-Promise"><button class="btn btn-download-cv btn-primary rounded-pill"> ResearchGate Id</button></a><p></p>
                                 <a href="https://orcid.org/0000-0001-8948-1813"><button class="btn btn-download-cv btn-primary rounded-pill"> ORCID Id </button></a>
                         </div>
                     </div>
@@ -98,20 +102,23 @@
                         <div class="card-body">
                             <div class="widget-content">
                                 <h5 class="widget-title card-title">LANGUAGES</h5>
-                                <p>English : native</p>
-                                <p>Spanish : fluent</p>
-                                <p>Italian : fluent</p>
+                                <HR>
+                                <p>English : Fluent</p>
+                                <p>Yuroba : Native</p>
+                                <!-- <p>Italian : fluent</p> -->
                             </div>
                         </div>
                     </div>
                     <div class="widget card">
                         <div class="card-body">
                             <div class="widget-content">
-                                <h5 class="widget-title card-title">INTERESTS</h5>
-                                <p>Video games</p>
-                                <p>Finance</p>
-                                <p>Basketball</p>
-                                <p>Theatre</p>
+                                <h5 class="widget-title card-title">RESEARCH INTERESTS</h5><HR>
+                                <p>Cyber security </p>
+                                <p>Cyber Forensics</p>
+                                <p>Artificial intelligence</p>
+                                <p>Machine Learning</p>
+                                <p>Mobile Communications</p>
+                                <p>Networking </p>
                             </div>
                         </div>
                     </div>
@@ -131,13 +138,13 @@
                         <hr>
                     </section>
                     <section class="resume-section">
-                 
+                    <div id="example"></div>
                         <div class="row">
                             <div class="col-lg-6">
                                 <!-- <h6 class="section-subtitle">RESUME</h6> -->
                                 <h2 class="section-title">EDUCATION</h2>
                                 <ul class="time-line">
-                                    <li class="time-line-item">
+                                    <li class="time-line-item wow">
                                         <span class="badge badge-primary nii">2020 - 2023</span>
                                         <h6 class="time-line-item-title titles">PhD Business Administration with Data Security Management </h6>
                                         <!-- <p class="time-line-item-subtitle">PhD.</p> -->
@@ -200,6 +207,7 @@
                         <hr>
                         <br>
                         <section class="resume-section">
+                  
                         <div class="row">
                             <div class="col-lg-6">
                                 <!-- <h6 class="section-subtitle">RESUME</h6> -->
@@ -322,7 +330,12 @@
     <script src="assets/js/poly.js"></script>
     <script src="assets/js/back.js"></script>
     <script>
-
+        $(function(){
+            $('#example').polygonizr();
+            document.addEventListener("DOMContentLoaded", function() {
+                new WOW().init();
+            });
+        })
     </script>
 </body>
 

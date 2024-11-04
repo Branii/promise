@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="assets/css/live-resume.css">
     <link rel="stylesheet" href="assets/css/cover.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- <link rel="stylesheet" href="assets/css/scroll.css"> -->
     <style>
 
-body{margin-top:20px;}
+
 .blog-grid {
     position: relative;
     box-shadow: 0 1rem 1.75rem 0 rgba(45, 55, 75, 0.1);
@@ -158,6 +159,9 @@ body{margin-top:20px;}
     font-weight: 400;
     padding: 0
 }
+.nii{
+        font-size: 16px !important;
+    }
 
 a, a:active, a:focus {
     color: #575a7b;
@@ -183,7 +187,7 @@ a, a:active, a:focus {
 
 <body>
     <header>
-        <button class="btn btn-white ml-auto mr-3 ml-md-0 mr-md-auto nav-link" style="border-radius:5px;">
+    <button class=" ml-auto mr-3 ml-md-0 mr-md-auto nav-link" style="border-radius:5px;border:none;">
             Today: <?=date("F, D Y")?>
         </button>
         <nav class="collapsible-nav" id="collapsible-nav">
@@ -197,57 +201,62 @@ a, a:active, a:focus {
             data-target="collapsible-nav"><img src="assets/images/hamburger.svg" alt="hamburger"></button>
     </header>
     <div class="content-wrapper">
-        <aside >
-            <div class="profile-img-wrapper" style="">
-                <img src="assets/images/prof.png" alt="profile">
-            </div>
-            <h1 class="profile-name">Dr. Egho Promise</h1>
-            <div class="text-center">
-                <span class="badge badge-white badge-pill profile-designation">Senior Lecturer</span>
-            </div>
-            <!-- <nav class="social-links">
-                <a href="#!" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                <a href="#!" class="social-link"><i class="fab fa-twitter"></i></a>
-                <a href="#!" class="social-link"><i class="fab fa-behance"></i></a>
-                <a href="#!" class="social-link"><i class="fab fa-dribbble"></i></a>
-                <a href="#!" class="social-link"><i class="fab fa-github"></i></a>
-            </nav> -->
-            <hr>
-            <p></p>
-            <div class="widget">
-                <h5 class="widget-title">personal information</h5><hr>
-                <div class="widget-content">
-                    <p>BIRTHDAY : 15 April 1990</p>
-                    <p>WEBSITE : www.example.com</p>
-                    <p>PHONE : +1 123 000 4444</p>
-                    <p>MAIL : your@example.com</p>
-                    <p>Location : California, USA</p>
-                    <a href="assets/documents/Ehigiator_Egho_Promise_CV.docx"><button class="btn btn-download-cv btn-primary rounded-pill"> <img src="assets/images/download.svg" alt="download"
-                        class="btn-img">DOWNLOAD CV </button></a>
-                </div>
-            </div>
-            <div class="widget card">
-                <div class="card-body">
-                    <div class="widget-content">
-                        <h5 class="widget-title card-title">LANGUAGES</h5>
-                        <p>English : native</p>
-                        <p>Spanish : fluent</p>
-                        <p>Italian : fluent</p>
+    <aside >
+                    <div class="profile-img-wrapper">
+                        <img src="assets/images/profile.jpg" alt="profile" style="border:solid 5px #ddd">
                     </div>
-                </div>
-            </div>
-            <div class="widget card">
-                <div class="card-body">
-                    <div class="widget-content">
-                        <h5 class="widget-title card-title">INTERESTS</h5>
-                        <p>Video games</p>
-                        <p>Finance</p>
-                        <p>Basketball</p>
-                        <p>Theatre</p>
+                    <h1 class="profile-name">Dr. Egho Promise</h1>
+                    <div class="text-center">
+                        <span class="badge badge-white badge-pill profile-designation nii">Senior Lecturer</span>
                     </div>
-                </div>
-            </div>
-        </aside>
+                    <!-- <nav class="social-links">
+                        <a href="#!" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#!" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#!" class="social-link"><i class="fab fa-behance"></i></a>
+                        <a href="#!" class="social-link"><i class="fab fa-dribbble"></i></a>
+                        <a href="#!" class="social-link"><i class="fab fa-github"></i></a>
+                    </nav> -->
+                    <hr>
+                    <p></p>
+                    <div class="widget">
+                        <h5 class="widget-title">personal information</h5><hr>
+                        <div class="widget-content">
+                            <!-- <p>BIRTHDAY : 15 April 1990</p> -->
+                            <!-- <p>WEBSITE : www.example.com</p> -->
+                            <p>PHONE : +44 7466 076674</p>
+                            <p>eghopromise@yahoo.com</p>
+                            <p>Location : Birmingham, UK</p><hr>
+                            <a href="assets/documents/Ehigiator_Egho_Promise_CV.docx"><button class="btn btn-download-cv btn-primary rounded-pill"> <i class='bx bxs-download bx-burst btn-img' style='color:#fff;font-size:14px;'></i>DOWNLOAD CV </button></a><p></p>
+                                <a href="https://scholar.google.com/citations?user=X-jERmIAAAAJ&hl=en"><button class="btn btn-download-cv btn-primary rounded-pill"> Google Scholar Id</button></a><p></p>
+                                <a href="https://www.researchgate.net/profile/Ehigiator-Egho-Promise"><button class="btn btn-download-cv btn-primary rounded-pill"> ResearchGate Id</button></a><p></p>
+                                <a href="https://orcid.org/0000-0001-8948-1813"><button class="btn btn-download-cv btn-primary rounded-pill"> ORCID Id </button></a>
+                        </div>
+                    </div>
+                    <div class="widget card">
+                        <div class="card-body">
+                            <div class="widget-content">
+                                <h5 class="widget-title card-title">LANGUAGES</h5>
+                                <HR>
+                                <p>English : Fluent</p>
+                                <p>Yuroba : Native</p>
+                                <!-- <p>Italian : fluent</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget card">
+                        <div class="card-body">
+                            <div class="widget-content">
+                                <h5 class="widget-title card-title">RESEARCH INTERESTS</h5><HR>
+                                <p>Cyber security </p>
+                                <p>Cyber Forensics</p>
+                                <p>Artificial intelligence</p>
+                                <p>Machine Learning</p>
+                                <p>Mobile Communications</p>
+                                <p>Networking </p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
         <main style="border-radius: 50px;">
             <section class="intro-section">
 
