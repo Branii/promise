@@ -13,7 +13,7 @@ require 'vendor/autoload.php';
             $this->mail->Host       = 'smtp.gmail.com';
             $this->mail->SMTPAuth   = true;
             $this->mail->Username   = 'braniiblack@gmail.com';
-            $this->mail->Password   = 'vkmc gfvh ufws vqul';
+            $this->mail->Password   = 'xxxxxxxxxxxxx';
             $this->mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
             $this->mail->Port       = 587; 
             $this->mail->setFrom('braniiblack@gmail.com', 'Dr. Promise');
